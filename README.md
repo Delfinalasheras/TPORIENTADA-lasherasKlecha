@@ -1,3 +1,0 @@
-# TPORIENTADA-lasherasKlecha
-# practica
-# practica
