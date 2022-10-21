@@ -1,0 +1,25 @@
+{
+  "name": "trabajop",
+  "version": "1.0.0",
+  "main": "ejemplo.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Delfinalasheras/TPORIENTADA-lasherasKlecha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Delfinalasheras/TPORIENTADA-lasherasKlecha/issues"
+  },
+  "homepage": "https://github.com/Delfinalasheras/TPORIENTADA-lasherasKlecha#readme",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "description": ""
+}
