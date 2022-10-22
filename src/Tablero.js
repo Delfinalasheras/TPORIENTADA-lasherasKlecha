@@ -40,7 +40,7 @@ function Tablero(){
                 console.log('prendio [%d][%d]',x,y,this.tablero[x][y].estado);
             }
         }
-        this.tablero.estado="cuadrado prendido";
+        this.estado="cuadrado prendido";
     }
 
     
