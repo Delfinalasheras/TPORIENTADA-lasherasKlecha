@@ -23,6 +23,12 @@ test("prender linea",()=>{
     expect(tablero.prenderLinea()).toBe("Linea Encendida");
 
 })
+test("prender Posicion",()=>{
+    const tablero = new Tablero();
+    tablero.armarTablero();
+    tablero.prenderPosicion([0,0],[2,2]);
+    expect(tablero.estado).toBe("cuadrado prendido");
+})
 
     
 
