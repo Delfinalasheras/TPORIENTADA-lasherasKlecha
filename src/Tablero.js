@@ -49,7 +49,7 @@ function Tablero(){
                 console.log('Apago [%d][%d]',x,y,this.tablero[x][y].estado);
             }
         }
-        this.estado="cuadrado prendido";
+        this.estado="cuadrado apagado";
     }
     // this.imprimir=function(){
     //     for(i=0;i<100;i++){
