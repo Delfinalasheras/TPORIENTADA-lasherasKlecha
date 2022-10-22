@@ -19,7 +19,7 @@ function Tablero(){
         for(i=0;i<100;i++){
             this.tablero[i]=new Array(100);
             this.tablero[i][3]=5;
-            console.log('posicion [%d][%d]',i,tablero[i][3]);
+            console.log('posicion [%d][%d]',i,this.tablero[i][3]);
         }
     }
 
