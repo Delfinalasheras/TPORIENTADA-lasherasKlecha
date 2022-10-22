@@ -3,7 +3,7 @@ const Lampara = require("./Lampara");
 function Tablero(){
     this.estado="Apagado";
     this.linea=new Array(100);
-    
+    this.tablero=new Array(100);
     this.getEstado=function(){
         this.estado="Encendido";
 
@@ -15,6 +15,14 @@ function Tablero(){
         }
         return "Linea Encendida";
     }
+    this.armarTablero=function(){
+        for(i=0;i<100;i++){
+            this.tablero[i]=new Array(100);
+            console.log('posicion [%d][%d]',i,i);
+        }
+    }
+
+    
 
 }
 module.exports=Tablero;

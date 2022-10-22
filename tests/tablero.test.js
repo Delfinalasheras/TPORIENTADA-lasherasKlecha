@@ -8,6 +8,7 @@ test("tablero Apagado",()=>{
 })
 test("tablero Encedido",()=>{
     const tablero = new Tablero();
+    tablero.armarTablero();
     tablero.prenderCompleto();
     expect(tablero.estado).toBe("Encendido");
 })
