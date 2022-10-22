@@ -1,6 +1,6 @@
 const Lampara = require('../src/Lampara');
 const Tablero = require('../src/Tablero');
-
+import {expect, jest, test} from '@jest/globals';
 beforeEach(() => {
     const tablero = new Tablero();
   });
