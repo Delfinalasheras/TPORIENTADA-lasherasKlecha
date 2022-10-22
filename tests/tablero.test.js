@@ -6,7 +6,7 @@ test("tablero Apagado",()=>{
     expect(tablero.estado).toBe("Apagado");
 })
 test("tablero Encedido",()=>{
-    const Tablero=new Tablero();
-    expect(tablero.estado).toBe("Apagado");
+    const tablero=new Tablero();
+    expect(tablero.estado).toBe("Encendido");
 })
 
