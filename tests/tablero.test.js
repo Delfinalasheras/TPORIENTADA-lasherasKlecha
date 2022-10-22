@@ -32,7 +32,7 @@ test("prender Posicion",()=>{
 test("mostrar Tablero Encendido",()=>{
     const tablero = new Tablero();
     tablero.armarTablero();
-    tablero.prenderPosicion([0,99],[99,99]);
+    tablero.prenderPosicion([0,0],[99,99]);
     expect(tablero.imprimir()).toBe("tablero impreso");
 })
 
