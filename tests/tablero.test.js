@@ -1,6 +1,6 @@
 const Lampara = require('../src/Lampara');
 const Tablero = require('../src/Tablero');
-var Tablero;
+var tablero;
 beforeEach(() => {
     var tablero = new Tablero();
   });
