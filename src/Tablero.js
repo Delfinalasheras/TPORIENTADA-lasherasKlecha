@@ -34,8 +34,8 @@ function Tablero(){
         this.estado="Tablero Encendido";
     }
     this.prenderPosicion=function(pos1,pos2){
-        for(x=pos1[1];x<100 && x<=pos2[1];x++){
-            for(y=pos1[0];y<100 && y<=pos2[0];y++){
+        for(x=pos1[0];x<100 && x<=pos2[0];x++){
+            for(y=pos1[1];y<100 && y<=pos2[1];y++){
                 this.tablero[x][y].prender();
                 console.log('prendio [%d][%d]',x,y,this.tablero[x][y].estado);
             }
