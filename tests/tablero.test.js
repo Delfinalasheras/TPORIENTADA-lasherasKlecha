@@ -1,8 +1,8 @@
 const Lampara = require('../src/Lampara');
 const Tablero = require('../src/Tablero');
-var tablero;
+const tablero;
 beforeEach(() => {
-    var tablero = new Tablero();
+    const tablero = new Tablero();
   });
 
 test("tablero Apagado",()=>{
