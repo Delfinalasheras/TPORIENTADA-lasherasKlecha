@@ -1,3 +1,4 @@
 test("lampara Apagada",()=>{
-    expect("Apagada").toBe("Apagada");
+    const lampara= new Lampara()
+    expect(lampara.estado).toBe("Apagada");
 })
