@@ -8,7 +8,7 @@ test("tablero Apagado",()=>{
 })
 test("tablero Encedido",()=>{
     const tablero = new Tablero();
-    const estado= tablero.getEstado();
+    tablero.prenderCompleto();
     expect(tablero.estado).toBe("Encendido");
 })
 test("prender Lampara",()=>{
@@ -22,6 +22,7 @@ test("prender linea",()=>{
     expect(tablero.prenderLinea()).toBe("Linea Encendida");
 
 })
+
     
 
 
