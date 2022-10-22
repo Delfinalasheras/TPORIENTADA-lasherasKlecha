@@ -46,10 +46,10 @@ function Tablero(){
         for(i=0;i<100;i++){
             for(j=0;j<100;j++){
                 if(this.tablero[i][j].estado=="Apagada"){
-                    console.log('[%d][%d] * ',x,y);
+                    console.log('[%d][%d] * ',i,j);
                 }
                 else{
-                    console.log('[%d][%d] 1 ',x,y);
+                    console.log('[%d][%d] 1 ',i,j);
                 }
                     
             }
