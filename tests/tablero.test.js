@@ -38,6 +38,8 @@ test("Apagar Posicion",()=>{
     expect(tablero.estado).toBe("cuadrado apagado");
 })
 test("Cambiar Estado Posicion",()=>{
+    const tablero = new Tablero();
+
     tablero.armarTablero();
     tablero.prenderPosicion([1,2],[3,2]);
     tablero.apagarPosicion([1,2],[1,2]);
