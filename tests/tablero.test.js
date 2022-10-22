@@ -12,8 +12,8 @@ test("tablero Encedido",()=>{
     expect(tablero.estado).toBe("Encendido");
 })
 test("prender Lampara",()=>{
-    const lampara=new Lampara();
     const tablero=new Tablero;
+    tablero.linea[0]=new Lampara();
     tablero.linea[0].prender();
     expect(tablero.linea[0].getEstado()).toBe("Encendida");
 })
