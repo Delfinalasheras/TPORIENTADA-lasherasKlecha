@@ -51,6 +51,21 @@ function Tablero(){
         }
         this.estado="cuadrado apagado";
     }
+    this.cambiarEstados=function(pos1,pos2){
+        for(x=pos1[0];x<100 && x<=pos2[0];x++){
+            for(y=pos1[1];y<100 && y<=pos2[1];y++){
+                if(this.tablero[x][y].estado=="Apagada"){
+                    this.tablero[x][y].prender();
+                    console.log('[%d][%d] Prendido ',i,j);
+                }
+                else{
+                    this.tablero[x][y].apagar();
+                    console.log('[%d][%d] 1 ',i,j);
+                }
+            }
+        }
+        this.estado="cuadrado cambiado";
+    }
     // this.imprimir=function(){
     //     for(i=0;i<100;i++){
     //         for(j=0;j<100;j++){
