@@ -29,6 +29,15 @@ test("prender Posicion",()=>{
     tablero.prenderPosicion([0,1],[1,3]);
     expect(tablero.estado).toBe("cuadrado prendido");
 })
+test("mostrar Tablero Encendido",()=>{
+    const tablero = new Tablero();
+    tablero.armarTablero();
+    tablero.prenderPosicion([0,1],[1,3]);
+    expect(tablero.imprimir()).toBe("tablero impreso");
+})
+
+    
+
 
     
 
