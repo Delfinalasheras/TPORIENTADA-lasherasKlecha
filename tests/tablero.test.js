@@ -30,6 +30,13 @@ test("prender Posicion",()=>{
     tablero.prenderPosicion([1,2],[3,4]);
     expect(tablero.estado).toBe("cuadrado prendido");
 })
+test("Apagar Posicion",()=>{
+    const tablero = new Tablero();
+    tablero.armarTablero();
+    tablero.prenderPosicion([1,2],[3,2]);
+    tablero.apagarPosicion([1,2],[3,2]);
+    expect(tablero.estado).toBe("cuadrado apagado");
+})
 // test("mostrar Tablero Encendido",()=>{
 //     const tablero = new Tablero();
 //     tablero.armarTablero();
