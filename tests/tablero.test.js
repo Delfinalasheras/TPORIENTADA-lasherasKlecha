@@ -15,11 +15,12 @@ test("prender Lampara",()=>{
     const lampara=new Lampara();
     const tablero=new Tablero;
 
-    expect(tablero.linea[0].prender()).toBe("Encendida");
+    expect(tablero.linea[0]).toBe("Encendida");
 })
 test("prender linea",()=>{
     const tablero=new Tablero;
     expect(tablero.prenderLinea()).toBe("Linea Encendida");
+
 })
     
 
