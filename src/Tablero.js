@@ -67,7 +67,7 @@ function Tablero(){
         this.estado="cuadrado cambiado";
     
     }
-    this.contarPrendidas=function(pos1,pos2){
+    this.contarPrendidas=function(){
         var totPrendidas=0;
         for(i=0;i<100;i++){
             for(j=0;j<100;j++){
