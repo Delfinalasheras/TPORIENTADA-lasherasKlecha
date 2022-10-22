@@ -18,10 +18,16 @@ function Tablero(){
     this.armarTablero=function(){
         for(i=0;i<100;i++){
             this.tablero[i]=new Array(100);
-            this.tablero[i][3]=5;
-            console.log('posicion [%d][%d]',i,this.tablero[i][3]);
         }
+        for(i=0;i<100;i++){
+            for(j=0;j<100;j++){
+                this.tablero[i][j]=new Lampara();
+            }
+        }
+        this.tablero[0][3].prender();
+        console.log(this.tablero[0][3].getEstado());
     }
+    
 
     
 
