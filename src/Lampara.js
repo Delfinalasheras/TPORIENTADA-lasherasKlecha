@@ -1,7 +1,7 @@
 function Lampara(){
     this.estado="Apagada";
     this.prender=function(){
-        this.estado="Encendida";
+        return "Encendida";
     }
 }
 
