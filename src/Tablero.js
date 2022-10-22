@@ -6,6 +6,7 @@ function Tablero(){
         this.estado="Encendido";
 
     };
+    this.linea[0].estado="Encendido";
 
 }
 module.exports=Tablero;
