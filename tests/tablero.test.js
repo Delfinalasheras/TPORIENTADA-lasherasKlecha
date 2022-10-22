@@ -41,6 +41,7 @@ test("Cambiar Estado Posicion",()=>{
     tablero.armarTablero();
     tablero.prenderPosicion([1,2],[3,2]);
     tablero.apagarPosicion([1,2],[1,2]);
+    tablero.cambiarEstados([1,2],[3,2]);
     expect(tablero.estado).toBe("cuadrado cambiado");
 })
 // test("mostrar Tablero Encendido",()=>{
