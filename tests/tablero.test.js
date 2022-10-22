@@ -23,20 +23,20 @@ test("prender linea",()=>{
     expect(tablero.prenderLinea()).toBe("Linea Encendida");
 
 })
-// test("prender Posicion",()=>{
-//     const tablero = new Tablero();
-//     tablero.armarTablero();
-//     tablero.prenderPosicion([1,2],[3,2]);
-//     tablero.prenderPosicion([1,2],[3,4]);
-//     expect(tablero.estado).toBe("cuadrado prendido");
-// })
-// test("Apagar Posicion",()=>{
-//     const tablero = new Tablero();
-//     tablero.armarTablero();
-//     tablero.prenderPosicion([1,2],[3,2]);
-//     tablero.apagarPosicion([1,2],[3,2]);
-//     expect(tablero.estado).toBe("cuadrado apagado");
-// })
+test("prender Posicion",()=>{
+    const tablero = new Tablero();
+    tablero.armarTablero();
+    tablero.prenderPosicion([1,2],[3,2]);
+    tablero.prenderPosicion([1,2],[3,4]);
+    expect(tablero.estado).toBe("cuadrado prendido");
+})
+test("Apagar Posicion",()=>{
+    const tablero = new Tablero();
+    tablero.armarTablero();
+    tablero.prenderPosicion([1,2],[3,2]);
+    tablero.apagarPosicion([1,2],[3,2]);
+    expect(tablero.estado).toBe("cuadrado apagado");
+})
 test("Cambiar Estado Posicion",()=>{
     const tablero = new Tablero();
 
@@ -45,6 +45,16 @@ test("Cambiar Estado Posicion",()=>{
     tablero.apagarPosicion([1,2],[1,2]);
     tablero.cambiarEstados([1,2],[3,2]);
     expect(tablero.estado).toBe("cuadrado cambiado");
+})
+test("Luces Prendidas",()=>{
+    const tablero=new Tablero();
+    tablero.armarTablero();
+    tablero.prenderPosicion([1,2],[3,2]);
+    tablero.apagarPosicion([1,2],[1,2]);
+    tablero.cambiarEstados([1,2],[3,2]);
+    
+    expect(tablero.contarPrendidas()).toBe(1);
+
 })
 // test("mostrar Tablero Encendido",()=>{
 //     const tablero = new Tablero();
