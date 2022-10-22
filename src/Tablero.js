@@ -24,8 +24,14 @@ function Tablero(){
                 this.tablero[i][j]=new Lampara();
             }
         }
-        this.tablero[0][3].prender();
-        console.log(this.tablero[0][3].getEstado());
+    }
+    this.prenderCompleto=function(){
+        for(i=0;i<100;i++){
+            for(j=0;j<100;j++){
+                this.tablero[i][j].prender;
+            }
+        }
+        return "Tablero Encendido";
     }
     
 
