@@ -4,7 +4,7 @@
   "main": "ejemplo.test.js",
   "scripts": {
     "test": "jest",
-    "testpush": "git add . && git commit -m 'hOLA' && git push && jest"
+    "testpush": "git add . && git commit -m 'test' && git push && jest"
   },
   "repository": {
     "type": "git",
