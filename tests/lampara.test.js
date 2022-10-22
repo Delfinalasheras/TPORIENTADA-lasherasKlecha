@@ -5,6 +5,6 @@ test("lampara Apagada",()=>{
 })
 test("lampara Encedida",()=>{
     const lampara= new Lampara();
-    expect(lampara.estado).toBe("Encendida");
+    expect(lampara.prender()).toBe("Encendida");
 })
     
