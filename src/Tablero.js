@@ -1,7 +1,6 @@
 const Lampara = require("./Lampara");
 
 function Tablero(){
-    this.estado="Apagado";
     this.linea=new Array(100);
     this.tablero=new Array(100);
     this.getEstado=function(){
