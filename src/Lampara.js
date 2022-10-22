@@ -3,6 +3,9 @@ function Lampara(){
     this.prender=function(){
         this.estado="Encendida";
     }
+    this.apagar=function(){
+        this.estado="Apagada";
+    }
     this.getEstado=function(){
         return this.estado;
     }
