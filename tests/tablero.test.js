@@ -10,9 +10,4 @@ test("tablero Encedido",()=>{
     const estado= tablero.getEstado();
     expect(tablero.estado).toBe("Encendido");
 })
-test("prender Luces", ()=>{
-    const tablero=new Tablero();
-    const estado=tablero.encender([0,0],[2,2]);
-    expect(tablero.estado).toBe("encedido de [0,0] a [2,2]");
-})
 
