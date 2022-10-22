@@ -65,19 +65,32 @@ function Tablero(){
             }
         }
         this.estado="cuadrado cambiado";
+    
+    }
+    this.contarPrendidas=function(pos1,pos2){
+        var totPrendidas=0;
+        for(i=0;i<100;i++){
+            for(j=0;j<100;j++){
+                if(this.tablero[i][j].estado=="Encendida"){
+                    totPrendidas++;
+                }       
+            }
+        }
+        return totPrendidas;
+
     }
     // this.imprimir=function(){
-    //     for(i=0;i<100;i++){
-    //         for(j=0;j<100;j++){
-    //             if(this.tablero[i][j].estado=="Apagada"){
-    //                 console.log('[%d][%d] * ',i,j);
-    //             }
-    //             else{
-    //                 console.log('[%d][%d] 1 ',i,j);
-    //             }
+        // for(i=0;i<100;i++){
+        //     for(j=0;j<100;j++){
+        //         if(this.tablero[i][j].estado=="Apagada"){
+        //             console.log('[%d][%d] * ',i,j);
+        //         }
+        //         else{
+        //             console.log('[%d][%d] 1 ',i,j);
+        //         }
                     
-    //         }
-    //     }
+        //     }
+        // }
     // }
 
     
