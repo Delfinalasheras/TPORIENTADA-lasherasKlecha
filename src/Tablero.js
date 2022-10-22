@@ -18,7 +18,8 @@ function Tablero(){
     this.armarTablero=function(){
         for(i=0;i<100;i++){
             this.tablero[i]=new Array(100);
-            console.log('posicion [%d][%d]',i,i);
+            this.tablero[i][3]="hola";
+            console.log('posicion [%d][%d]',i,tablero[i][3]);
         }
     }
 
