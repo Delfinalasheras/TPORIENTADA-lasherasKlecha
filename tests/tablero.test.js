@@ -1,4 +1,5 @@
 test("tablero Apagado",()=>{
-    expect("tablero Apagado").toBe("tablero Apagado");
+    const tablero= new Tablero();
+    expect(tablero.estado).toBe("tablero Apagado");
 })
 
