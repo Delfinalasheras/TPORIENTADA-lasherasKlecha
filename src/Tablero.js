@@ -30,7 +30,7 @@ function Tablero(){
                 this.tablero[i][j].prender;
             }
         }
-        return "Tablero Encendido";
+        this.estado="Tablero Encendido";
     }
     
 

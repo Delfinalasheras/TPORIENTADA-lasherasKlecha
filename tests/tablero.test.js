@@ -9,8 +9,8 @@ test("tablero Apagado",()=>{
 test("tablero Encedido",()=>{
     const tablero = new Tablero();
     tablero.armarTablero();
-    
-    expect(tablero.prenderCompleto()).toBe("Tablero Encendido");
+    tablero.prenderCompleto();
+    expect(tablero.estado).toBe("Tablero Encendido");
 })
 test("prender Lampara",()=>{
     const tablero = new Tablero();
