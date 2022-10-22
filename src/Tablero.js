@@ -9,7 +9,7 @@ function Tablero(){
 
     };
     this.linea[0]=new Lampara();
-    this.linea[0].prender();
+    
 
 }
 module.exports=Tablero;
