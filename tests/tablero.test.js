@@ -3,7 +3,7 @@ const Tablero = require('../src/Tablero');
 var tablero;
 beforeEach(() => {
     var tablero = new Tablero();
-  });
+  })
 
 test("tablero Apagado",()=>{
     
