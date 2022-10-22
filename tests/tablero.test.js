@@ -17,4 +17,10 @@ test("prender Lampara",()=>{
 
     expect(tablero.linea[0].prender()).toBe("Encendida");
 })
+test("prender linea",()=>{
+    const tablero=new Tablero;
+    expect(tablero.prenderLinea()).toBe("Linea Encendida");
+})
+    
+
 
