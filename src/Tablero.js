@@ -60,7 +60,7 @@ function Tablero(){
                 }
                 else{
                     this.tablero[x][y].apagar();
-                    console.log('[%d][%d] 1 ',i,j);
+                    console.log('[%d][%d] Apagada ',i,j);
                 }
             }
         }
