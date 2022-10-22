@@ -12,7 +12,7 @@ function Tablero(){
     this.prenderLinea=function(){
         for(i=0;i<100;i++){
             this.linea[i]=new Lampara();
-            this.linea[i].Prender();
+            this.linea[i].prender();
         }
         return "Linea Encendida";
     }
