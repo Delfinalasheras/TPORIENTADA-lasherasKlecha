@@ -27,6 +27,7 @@ test("prender Posicion",()=>{
     const tablero = new Tablero();
     tablero.armarTablero();
     tablero.prenderPosicion([1,2],[3,2]);
+    tablero.prenderPosicion([1,2],[3,4]);
     expect(tablero.estado).toBe("cuadrado prendido");
 })
 // test("mostrar Tablero Encendido",()=>{
