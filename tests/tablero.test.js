@@ -1,5 +1,5 @@
 const Tablero = require('../src/Tablero');
-const Tablero= require('../src/Tablero');
+
 
 test("tablero Apagado",()=>{
     const tablero= new Tablero();
