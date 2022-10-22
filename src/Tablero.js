@@ -28,12 +28,20 @@ function Tablero(){
     this.prenderCompleto=function(){
         for(i=0;i<100;i++){
             for(j=0;j<100;j++){
-                this.tablero[i][j].prender;
+                this.tablero[i][j].prender();
             }
         }
         this.estado="Tablero Encendido";
     }
-    
+    this.prenderPosicion=function(pos1,pos2){
+        for(x=pos1[1];x<100 && x<=pos2[1];x++){
+            for(y=pos1[0];y<100 && y<=pos2[0];y++){
+                this.tablero[x][y].prender();
+                console.log('prendio [%d][%d]',x,y,this.tablero[x][y].estado);
+            }
+        }
+        this.tablero.estado="cuadrado prendido";
+    }
 
     
 
