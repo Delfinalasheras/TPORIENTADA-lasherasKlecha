@@ -53,7 +53,7 @@ test("Luces Prendidas",()=>{
     tablero.apagarPosicion([1,2],[1,2]);
     tablero.cambiarEstados([1,2],[3,2]);
     
-    expect(tablero.contarPrendidas()).toBe(1);
+    expect(tablero.contarPrendidas()).toBe(3);
 
 })
 // test("mostrar Tablero Encendido",()=>{
