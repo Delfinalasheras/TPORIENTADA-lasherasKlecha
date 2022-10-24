@@ -15,7 +15,7 @@ test("tablero Encedido",()=>{
 test("prender Lampara",()=>{
     const tablero = new Tablero();
     tablero.linea[0]=new Lampara();
-    tablero.linea[0].prender();
+    tablero.linea[0].encender();
     expect(tablero.linea[0].getEstado()).toBe("Encendida");
 })
 test("prender linea",()=>{
