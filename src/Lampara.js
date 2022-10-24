@@ -12,7 +12,7 @@ function Lampara(){
     }
     this.cambiarIntensidad=function(aggIntensidad){
         this.intensidad = this.intensidad + aggIntensidad;
-        return intensidad;
+        return this.intensidad;
     }
 }
 
