@@ -51,7 +51,7 @@ test("Luces Prendidas",()=>{
     tablero.armarTablero();
     tablero.prenderPosicion([1,2],[3,2]);
     tablero.apagarPosicion([2,2],[2,2]);
-    tablero.cambiarEstados([-1,2],[3,2]);
+    tablero.cambiarEstados([1,2],[3,2]);
     
     expect(tablero.contarPrendidas()).toBe(3);
 
@@ -61,13 +61,6 @@ test("Posición negativa",()=>{
     tablero.armarTablero();
     expect(tablero.verificarPosicion([-1,2],[3,2])).toThrow(new Error("La posición debe ser positiva"));
 })
-
-// test("mostrar Tablero Encendido",()=>{
-//     const tablero = new Tablero();
-//     tablero.armarTablero();
-//     tablero.prenderPosicion([0,0],[99,99]);
-//     expect(tablero.imprimir()).toBe("tablero impreso");
-// })
 
     
 
