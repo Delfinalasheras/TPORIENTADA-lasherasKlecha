@@ -56,6 +56,12 @@ test("Luces Prendidas",()=>{
     expect(tablero.contarPrendidas()).toBe(3);
 
 })
+test("Posición negativa",()=>{
+    const tablero = new Tablero();
+    tablero.armarTablero();
+    expect(tablero.verificarPosicion([-1,2],[3,2])).toThrow(new Error("La posición debe ser positiva"));
+})
+
 // test("mostrar Tablero Encendido",()=>{
 //     const tablero = new Tablero();
 //     tablero.armarTablero();

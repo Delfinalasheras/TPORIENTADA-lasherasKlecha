@@ -73,6 +73,11 @@ function Tablero(){
         return totPrendidas;
 
     }
+    this.verificarPosicion = function(pos1,pos2){
+        if(pos1[0]<0 || pos1[1]<0 || pos2[0]<0 || pos1[1]<0){
+            throw new Error("La posición debe ser positiva");
+        }
+    }
     // this.imprimir=function(){
         // for(i=0;i<100;i++){
         //     for(j=0;j<100;j++){
