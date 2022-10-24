@@ -55,7 +55,7 @@ function Tablero(){
         for(x=pos1[0];x<100 && x<=pos2[0];x++){
             for(y=pos1[1];y<100 && y<=pos2[1];y++){
                 if(this.tablero[x][y].estado=="Apagada"){
-                    this.tablero[x][y].prender();
+                    this.tablero[x][y].encender();
                     console.log('[%d][%d] Prendido ',x,y);
                 }
                 else{
