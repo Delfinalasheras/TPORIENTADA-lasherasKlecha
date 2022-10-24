@@ -1,6 +1,6 @@
 function Lampara(){
     this.intensidad = 0;
-    
+
     this.getEstado=function(){
         return this.estado;
     }
@@ -15,6 +15,13 @@ function Lampara(){
         this.intensidad = this.intensidad - 1;
         if(this.intensidad < 0){
             this.intensidad = 0;
+        }
+        return this.intensidad;
+    }
+    this.cambiar=function(){
+        this.intensidad = this.intensidad + 2;
+        if(this.intensidad > 10){
+            this.intensidad = 10;
         }
         return this.intensidad;
     }
