@@ -15,5 +15,7 @@ test("Cambiar intensidad",()=>{
 
 test("Agregar intensidad",()=>{
     const lampara= new Lampara();
+    lampara.cambiarIntensidad(1);
     expect(lampara.cambiarIntensidad(1)).toBe(2);
+
 })
