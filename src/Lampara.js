@@ -9,6 +9,9 @@ function Lampara(){
     this.getEstado=function(){
         return this.estado;
     }
+    this.cambiarIntensidad=function(intensidad){
+        return intensidad;
+    }
 }
 
 module.exports=Lampara;
