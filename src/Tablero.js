@@ -78,7 +78,7 @@ function Tablero(){
     }
     this.verificarPosicion = function(pos1,pos2){
         if(pos1[0]<0 || pos1[1]<0 || pos2[0]<0 || pos1[1]<0){
-            throw new Error("La posición debe ser positiva");
+            throw(new Error("La posición debe ser positiva"));
         }
     }
     // this.imprimir=function(){
