@@ -11,7 +11,7 @@ function Tablero(){
     this.prenderLinea=function(){
         for(i=0;i<100;i++){
             this.linea[i]=new Lampara();
-            this.linea[i].prender();
+            this.linea[i].encender();
         }
         return "Linea Encendida";
     }
@@ -28,7 +28,7 @@ function Tablero(){
     this.prenderCompleto=function(){
         for(i=0;i<100;i++){
             for(j=0;j<100;j++){
-                this.tablero[i][j].prender();
+                this.tablero[i][j].encender();
             }
         }
         this.estado="Tablero Encendido";
