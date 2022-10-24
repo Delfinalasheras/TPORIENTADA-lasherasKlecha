@@ -54,14 +54,8 @@ function Tablero(){
     this.cambiarEstados=function(pos1,pos2){
         for(x=pos1[0];x<100 && x<=pos2[0];x++){
             for(y=pos1[1];y<100 && y<=pos2[1];y++){
-                if(this.tablero[x][y].estado=="Apagada"){
-                    this.tablero[x][y].encender();
-                    console.log('[%d][%d] Prendido ',x,y);
-                }
-                else{
-                    this.tablero[x][y].apagar();
-                    console.log('[%d][%d] Apagada ',x,y);
-                }
+                this.tablero[x][y].cambiar();
+                console.log('Intensidad cambiada [%d][%d] = %d',x,y,this.tablero[x][y].intensidad);
             }
         }
         this.estado="cuadrado cambiado";
