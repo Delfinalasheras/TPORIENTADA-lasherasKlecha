@@ -17,6 +17,14 @@ function Lampara(){
         }
         return this.intensidad;
     }
+    this.quitarIntensidad=function(quitIntensidad){
+        this.intensidad = this.intensidad - quitIntensidad;
+        if(this.intensidad < 0){
+            this.intensidad = 0;
+        }
+        return this.intensidad;
+    }
+    
 }
 
 module.exports=Lampara;
