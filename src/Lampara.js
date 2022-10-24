@@ -10,8 +10,11 @@ function Lampara(){
     this.getEstado=function(){
         return this.estado;
     }
-    this.cambiarIntensidad=function(aggIntensidad){
+    this.agregarIntensidad=function(aggIntensidad){
         this.intensidad = this.intensidad + aggIntensidad;
+        if(this.intensidad > 10){
+            this.intensidad = 10;
+        }
         return this.intensidad;
     }
 }

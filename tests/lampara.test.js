@@ -10,12 +10,19 @@ test("lampara Encedida",()=>{
 })
 test("Cambiar intensidad",()=>{
     const lampara= new Lampara();
-    expect(lampara.cambiarIntensidad(1)).toBe(1);
+    expect(lampara.agregarIntensidad(1)).toBe(1);
 })
 
 test("Agregar intensidad",()=>{
     const lampara= new Lampara();
-    lampara.cambiarIntensidad(1);
-    expect(lampara.cambiarIntensidad(1)).toBe(2);
+    lampara.agregarIntensidad(1);
+    expect(lampara.agregarIntensidad(1)).toBe(2);
+
+})
+
+test("Agregar intensidad máxima",()=>{
+    const lampara= new Lampara();
+    lampara.agregarIntensidad(15);
+    expect(lampara.agregarIntensidad(1)).toBe(10);
 
 })
