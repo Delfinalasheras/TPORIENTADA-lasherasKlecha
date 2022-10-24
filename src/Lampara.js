@@ -1,5 +1,6 @@
 function Lampara(){
     this.estado="Apagada";
+    this.intensidad = 0;
     this.prender=function(){
         this.estado="Encendida";
     }
@@ -10,8 +11,8 @@ function Lampara(){
         return this.estado;
     }
     this.cambiarIntensidad=function(aggIntensidad){
-        this.intensidad = aggIntensidad;
-        return intensidad + aggIntensidad;
+        this.intensidad = this.intensidad + aggIntensidad;
+        return intensidad;
     }
 }
 
