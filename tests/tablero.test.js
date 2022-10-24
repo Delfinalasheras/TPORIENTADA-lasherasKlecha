@@ -1,9 +1,14 @@
+const { beforeEach } = require('jest-circus');
 const Lampara = require('../src/Lampara');
 const Tablero = require('../src/Tablero');
 
+var tablero;
+
+beforeEach(() => {
+    var tablero = new Tablero();
+});
 
 test("tablero Apagado",()=>{
-    const tablero = new Tablero();
     expect(tablero.estado).toBe("Apagado");
 })
 test("tablero Encedido",()=>{
