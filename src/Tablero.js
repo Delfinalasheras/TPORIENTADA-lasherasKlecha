@@ -36,8 +36,8 @@ function Tablero(){
     this.prenderPosicion=function(pos1,pos2){
         for(x=pos1[0];x<100 && x<=pos2[0];x++){
             for(y=pos1[1];y<100 && y<=pos2[1];y++){
-                this.tablero[x][y].prender();
-                console.log('prendio [%d][%d]',x,y,this.tablero[x][y].estado);
+                this.tablero[x][y].encender();
+                console.log('prendio [%d][%d] = %d',x,y,this.tablero[x][y].intensidad);
             }
         }
         this.estado="cuadrado prendido";
@@ -46,7 +46,7 @@ function Tablero(){
         for(x=pos1[0];x<100 && x<=pos2[0];x++){
             for(y=pos1[1];y<100 && y<=pos2[1];y++){
                 this.tablero[x][y].apagar();
-                console.log('Apago [%d][%d]',x,y,this.tablero[x][y].estado);
+                console.log('Apago [%d][%d] = %d',x,y,this.tablero[x][y].intensidad);
             }
         }
         this.estado="cuadrado apagado";
@@ -71,7 +71,7 @@ function Tablero(){
         var totPrendidas=0;
         for(i=0;i<100;i++){
             for(j=0;j<100;j++){
-                if(this.tablero[i][j].estado=="Encendida"){
+                if(this.tablero[i][j].intensidad > 0){
                     totPrendidas++;
                 }       
             }
