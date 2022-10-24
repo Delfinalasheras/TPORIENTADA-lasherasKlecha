@@ -50,7 +50,7 @@ test("Luces Prendidas",()=>{
     const tablero=new Tablero();
     tablero.armarTablero();
     tablero.prenderPosicion([1,2],[3,2]);
-    tablero.apagarPosicion([1,2],[1,2]);
+    tablero.apagarPosicion([2,2],[2,2]);
     tablero.cambiarEstados([1,2],[3,2]);
     
     expect(tablero.contarPrendidas()).toBe(3);
