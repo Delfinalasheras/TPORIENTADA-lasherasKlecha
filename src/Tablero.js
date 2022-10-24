@@ -34,7 +34,7 @@ function Tablero(){
         this.estado="Tablero Encendido";
     }
     this.prenderPosicion=function(pos1,pos2){
-        verificarPosicion(pos1,pos2);
+        this.verificarPosicion(pos1,pos2);
         for(x=pos1[0];x<100 && x<=pos2[0];x++){
             for(y=pos1[1];y<100 && y<=pos2[1];y++){
                 this.tablero[x][y].encender();
@@ -44,7 +44,7 @@ function Tablero(){
         this.estado="cuadrado prendido";
     }
     this.apagarPosicion=function(pos1,pos2){
-        verificarPosicion(pos1,pos2);
+        this.verificarPosicion(pos1,pos2);
         for(x=pos1[0];x<100 && x<=pos2[0];x++){
             for(y=pos1[1];y<100 && y<=pos2[1];y++){
                 this.tablero[x][y].apagar();
@@ -54,7 +54,7 @@ function Tablero(){
         this.estado="cuadrado apagado";
     }
     this.cambiarEstados=function(pos1,pos2){
-        verificarPosicion(pos1,pos2);
+        this.verificarPosicion(pos1,pos2);
         for(x=pos1[0];x<100 && x<=pos2[0];x++){
             for(y=pos1[1];y<100 && y<=pos2[1];y++){
                 this.tablero[x][y].cambiar();
