@@ -10,15 +10,15 @@ function Lampara(){
     this.getEstado=function(){
         return this.estado;
     }
-    this.agregarIntensidad=function(aggIntensidad){
-        this.intensidad = this.intensidad + aggIntensidad;
+    this.encender=function(){
+        this.intensidad = this.intensidad + 1;
         if(this.intensidad > 10){
             this.intensidad = 10;
         }
         return this.intensidad;
     }
-    this.quitarIntensidad=function(quitIntensidad){
-        this.intensidad = this.intensidad - quitIntensidad;
+    this.apagar=function(){
+        this.intensidad = this.intensidad - 1;
         if(this.intensidad < 0){
             this.intensidad = 0;
         }
